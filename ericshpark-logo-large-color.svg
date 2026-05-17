@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 360" role="img" aria-label="ericshpark logo">
+  <title>ericshpark</title>
+  <desc>A heraldic crown above the lowercase wordmark ericshpark, in navy and gold.</desc>
+
+  <defs>
+    <linearGradient id="goldGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E6CB94"/>
+      <stop offset="100%" stop-color="#A88748"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ====== CROWN ====== -->
+  <g transform="translate(300 140)">
+    <!-- Crown silhouette: 5 rising points on a band, fully symmetric -->
+    <path d="
+      M -100 45
+      L -100 20
+      L -90 20  L -90 -25  L -65 -25  L -65 20
+      L -45 20  L -45 -55  L -20 -55  L -20 20
+      L -12 20  L -12 -85  L  12 -85  L  12 20
+      L  20 20  L  20 -55  L  45 -55  L  45 20
+      L  65 20  L  65 -25  L  90 -25  L  90 20
+      L 100 20  L 100 45  Z"
+      fill="#0A1F44" stroke="#0A1F44" stroke-width="2" stroke-linejoin="miter"/>
+
+    <!-- Gold band -->
+    <rect x="-100" y="22" width="200" height="20" fill="url(#goldGrad)" stroke="#0A1F44" stroke-width="2"/>
+    <!-- Pearls inside the band -->
+    <circle cx="-66" cy="32" r="4" fill="#0A1F44"/>
+    <circle cx="0"   cy="32" r="4" fill="#0A1F44"/>
+    <circle cx="66"  cy="32" r="4" fill="#0A1F44"/>
+
+    <!-- Jewels at the tips -->
+    <!-- Center: gold diamond floating above the tallest point -->
+    <polygon points="0,-108 11,-92 0,-76 -11,-92" fill="url(#goldGrad)" stroke="#0A1F44" stroke-width="2" stroke-linejoin="miter"/>
+    <!-- Inner pair: gold circles -->
+    <circle cx="-32.5" cy="-67" r="7" fill="url(#goldGrad)" stroke="#0A1F44" stroke-width="2"/>
+    <circle cx="32.5"  cy="-67" r="7" fill="url(#goldGrad)" stroke="#0A1F44" stroke-width="2"/>
+    <!-- Outer pair: smaller gold circles -->
+    <circle cx="-77.5" cy="-37" r="5" fill="url(#goldGrad)" stroke="#0A1F44" stroke-width="2"/>
+    <circle cx="77.5"  cy="-37" r="5" fill="url(#goldGrad)" stroke="#0A1F44" stroke-width="2"/>
+  </g>
+
+  <!-- ====== WORDMARK ====== -->
+  <g transform="translate(300 250)" text-anchor="middle">
+    <text font-family="'Inter','Manrope','Helvetica Neue',Arial,sans-serif"
+          font-size="62" font-weight="700" letter-spacing="-1.5"
+          fill="#0A1F44">ericshpark</text>
+    <!-- Thin gold rule -->
+    <line x1="-150" y1="32" x2="150" y2="32" stroke="url(#goldGrad)" stroke-width="2"/>
+    <!-- Tagline -->
+    <text y="64" font-family="'Inter','Helvetica Neue',Arial,sans-serif"
+          font-size="13" font-weight="500" letter-spacing="6"
+          fill="#0A1F44" opacity="0.78">RIGOR &#xB7; RESPONSIBILITY &#xB7; CRAFT</text>
+  </g>
+</svg>
