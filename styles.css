@@ -232,7 +232,9 @@ p  { margin: 0 0 1.1em 0; }
   position: relative;
   display: block;
 }
-.shot-card__frame svg { width: 100%; height: 100%; display: block; }
+.shot-card__frame svg,
+.shot-card__frame img,
+.shot-card__frame video { width: 100%; height: 100%; display: block; object-fit: cover; }
 .shot-card__body {
   padding: 1rem 1.1rem 1.1rem 1.1rem;
   font-family: var(--sans);
